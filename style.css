@@ -217,15 +217,23 @@ body{
     padding:0 30px;
     text-align:center;
 }
+.opening-hours{
+    max-width:900px;
+    margin:90px auto;
+    padding:0 30px;
+    text-align:center;
+}
 
 .opening-hours h2{
     font-size:42px;
-    margin-bottom:35px;
+    margin-bottom:40px;
     color:#222;
 }
 
 .hours-table{
+    margin:0 auto;              /* <-- This centers the table */
     width:100%;
+    max-width:650px;            /* Nice readable width */
     border-collapse:collapse;
     background:#fff;
     border-radius:18px;
@@ -247,6 +255,7 @@ body{
 .hours-table td:first-child{
     font-weight:bold;
     color:#6E8B5B;
+    text-align:left;
     width:35%;
 }
 
