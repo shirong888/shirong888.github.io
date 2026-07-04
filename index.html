@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonsai | Authentic Asian Kitchen</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bonsai Logo</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f8f6f2;
+    font-family:Georgia, "Times New Roman", serif;
+}
+
+.logo{
+    font-size:72px;
+    color:#222;
+    font-weight:bold;
+}
+
+.i-wrapper{
+    position:relative;
+    display:inline-block;
+}
+
+.i-wrapper .letter{
+    display:inline-block;
+}
+
+.i-wrapper .flower{
+    position:absolute;
+    left:50%;
+    top:-0.55em;
+    transform:translateX(-50%);
+    font-size:0.35em;
+    line-height:1;
+    animation:flowerRotate 12s linear infinite;
+    transform-origin:center center;
+}
+
+@keyframes flowerRotate{
+    0%{
+        transform:translateX(-50%) rotate(0deg);
+    }
+    100%{
+        transform:translateX(-50%) rotate(360deg);
+    }
+}
+</style>
+
 </head>
 <body>
 
-    <h1>bonsai 🌸</h1>
-    <h2>Authentic Asian Kitchen</h2>
-
-    <p>Welcome to our restaurant.</p>
-
-    <script src="script.js"></script>
+<h1 class="logo">
+    bonsa<span class="i-wrapper">
+        <span class="flower">🌸</span>
+        <span class="letter">i</span>
+    </span>
+</h1>
 
 </body>
 </html>
