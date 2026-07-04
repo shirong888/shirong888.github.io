@@ -220,22 +220,18 @@ body{
 
 .opening-hours h2{
     font-size:42px;
-    margin-bottom:40px;
     color:#222;
+    margin-bottom:30px;
 }
 
-.hours-text{
+.opening-hours p{
     font-family:Arial, Helvetica, sans-serif;
     font-size:18px;
+    line-height:1.9;
     color:#555;
-    line-height:2;
+    margin-bottom:24px;
 }
 
-.hours-text p{
-    margin-bottom:28px;
-}
-
-.hours-text strong{
+.opening-hours strong{
     color:#6E8B5B;
-    font-size:22px;
 }
