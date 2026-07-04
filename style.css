@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f6f2;
+    color: #333;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+h2 {
+    color: #f4a7b9;
+    letter-spacing: 4px;
+}
