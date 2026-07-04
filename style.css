@@ -211,3 +211,46 @@ body{
     color:#444;
     font-size:17px;
 }
+.opening-hours{
+    max-width:700px;
+    margin:90px auto;
+    padding:0 30px;
+    text-align:center;
+}
+
+.opening-hours h2{
+    font-size:42px;
+    margin-bottom:35px;
+    color:#222;
+}
+
+.hours-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.hours-table td{
+    padding:18px 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    border-bottom:1px solid #ececec;
+}
+
+.hours-table tr:last-child td{
+    border-bottom:none;
+}
+
+.hours-table td:first-child{
+    font-weight:bold;
+    color:#6E8B5B;
+    width:35%;
+}
+
+.hours-table td:last-child{
+    text-align:right;
+    color:#444;
+}
