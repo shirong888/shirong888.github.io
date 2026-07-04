@@ -4,23 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bonsai Logo</title>
+<title>Bonsai | Authentic Asian Kitchen</title>
 
 <style>
+
 body{
     margin:0;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
     background:#f8f6f2;
     font-family:Georgia, "Times New Roman", serif;
 }
 
+.container{
+    text-align:center;
+}
+
 .logo{
-    font-size:72px;
+    font-size:80px;
     color:#222;
-    font-weight:bold;
+    font-weight:600;
+    margin:0;
 }
 
 .i-wrapper{
@@ -28,40 +34,77 @@ body{
     display:inline-block;
 }
 
-.i-wrapper .letter{
+.letter{
     display:inline-block;
 }
 
-.i-wrapper .flower{
+.flower{
     position:absolute;
     left:50%;
     top:-0.55em;
     transform:translateX(-50%);
     font-size:0.35em;
     line-height:1;
-    animation:flowerRotate 12s linear infinite;
+    animation:flowerRotate 10s linear infinite;
     transform-origin:center center;
 }
 
 @keyframes flowerRotate{
+
     0%{
         transform:translateX(-50%) rotate(0deg);
     }
+
     100%{
         transform:translateX(-50%) rotate(360deg);
     }
+
 }
+
+.tagline{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-top:18px;
+}
+
+.line{
+    width:90px;
+    height:1px;
+    background:#6E8B5B;
+}
+
+.text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    letter-spacing:4px;
+    color:#6E8B5B;
+    text-transform:uppercase;
+}
+
 </style>
 
 </head>
+
 <body>
 
+<div class="container">
+
 <h1 class="logo">
-    bonsa<span class="i-wrapper">
-        <span class="flower">🌸</span>
-        <span class="letter">i</span>
-    </span>
+bonsa<span class="i-wrapper">
+<span class="flower">🌸</span>
+<span class="letter">i</span>
+</span>
 </h1>
+
+<div class="tagline">
+    <span class="line"></span>
+    <span class="text">Authentic Asian Kitchen</span>
+    <span class="line"></span>
+</div>
+
+</div>
 
 </body>
 </html>
