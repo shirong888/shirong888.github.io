@@ -212,12 +212,6 @@ body{
     font-size:17px;
 }
 .opening-hours{
-    max-width:700px;
-    margin:90px auto;
-    padding:0 30px;
-    text-align:center;
-}
-.opening-hours{
     max-width:900px;
     margin:90px auto;
     padding:0 30px;
@@ -230,36 +224,18 @@ body{
     color:#222;
 }
 
-.hours-table{
-    margin:0 auto;              /* <-- This centers the table */
-    width:100%;
-    max-width:650px;            /* Nice readable width */
-    border-collapse:collapse;
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.12);
-}
-
-.hours-table td{
-    padding:18px 24px;
+.hours-text{
     font-family:Arial, Helvetica, sans-serif;
-    font-size:17px;
-    border-bottom:1px solid #ececec;
+    font-size:18px;
+    color:#555;
+    line-height:2;
 }
 
-.hours-table tr:last-child td{
-    border-bottom:none;
+.hours-text p{
+    margin-bottom:28px;
 }
 
-.hours-table td:first-child{
-    font-weight:bold;
+.hours-text strong{
     color:#6E8B5B;
-    text-align:left;
-    width:35%;
-}
-
-.hours-table td:last-child{
-    text-align:right;
-    color:#444;
+    font-size:22px;
 }
