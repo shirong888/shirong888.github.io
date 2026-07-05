@@ -1,27 +1,3 @@
-.opening-hours{
-    max-width:900px;
-    margin:90px auto;
-    padding:0 30px;
-    text-align:center;
-}
-
-.opening-hours h2{
-    font-size:42px;
-    color:#222;
-    margin-bottom:30px;
-}
-
-.opening-hours p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:18px;
-    line-height:1.9;
-    color:#555;
-    margin-bottom:24px;
-}
-
-.opening-hours strong{
-    color:#6E8B5B;
-}
 body{
     margin:0;
     background:#f8f6f2;
@@ -44,7 +20,6 @@ body{
 
 .logo{
     font-size:80px;
-    color:#222;
     font-weight:600;
     margin:0;
 }
@@ -62,7 +37,6 @@ body{
     position:absolute;
     left:50%;
     top:-0.55em;
-    transform:translateX(-50%);
     font-size:0.35em;
     line-height:1;
     animation:flowerRotate 10s linear infinite;
@@ -70,12 +44,8 @@ body{
 }
 
 @keyframes flowerRotate{
-    0%{
-        transform:translateX(-50%) rotate(0deg);
-    }
-    100%{
-        transform:translateX(-50%) rotate(360deg);
-    }
+    from{ transform:translateX(-50%) rotate(0deg); }
+    to{ transform:translateX(-50%) rotate(360deg); }
 }
 
 .tagline{
@@ -100,21 +70,26 @@ body{
     text-transform:uppercase;
 }
 
-.about{
+.about,
+.location,
+.opening-hours{
     max-width:900px;
-    margin:0 auto 90px;
+    margin:90px auto;
     padding:0 30px;
     text-align:center;
 }
 
 .about h2,
-.location h2{
+.location h2,
+.opening-hours h2{
     font-size:42px;
     color:#222;
     margin-bottom:30px;
 }
 
-.about p{
+.about p,
+.location p,
+.opening-hours p{
     font-family:Arial, Helvetica, sans-serif;
     font-size:18px;
     line-height:1.9;
@@ -122,27 +97,9 @@ body{
     margin-bottom:24px;
 }
 
-.location{
-    max-width:1100px;
-    margin:90px auto;
-    padding:0 30px;
-}
-
-.location h2{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.location-content{
-    display:flex;
-    gap:40px;
-    align-items:center;
-    flex-wrap:wrap;
-}
-
 .location-image{
-    flex:1;
-    min-width:320px;
+    max-width:900px;
+    margin:0 auto 45px;
 }
 
 .location-image img{
@@ -152,34 +109,50 @@ body{
 }
 
 .location-text{
-    flex:1;
-    min-width:320px;
+    max-width:760px;
+    margin:0 auto;
 }
 
 .location-text h3{
     font-size:30px;
     margin-bottom:20px;
-    color:#222;
-}
-
-.location-text p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:18px;
-    line-height:1.8;
-    color:#555;
 }
 
 .location-text ul{
-    margin:25px 0;
-    padding-left:20px;
+    list-style:none;
+    padding:0;
+    margin:30px 0;
     font-family:Arial, Helvetica, sans-serif;
     font-size:18px;
     line-height:2;
     color:#444;
 }
 
-.location-text li{
-    margin-bottom:10px;
+.address-box{
+    background:#ffffff;
+    padding:22px;
+    border-radius:16px;
+    margin:35px auto;
+    max-width:520px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.08);
+}
+
+.address-box h4{
+    margin:0 0 10px;
+    color:#6E8B5B;
+    font-size:22px;
+}
+
+.address-box p{
+    margin:0;
+    line-height:1.8;
+    color:#444;
+    font-size:17px;
+}
+
+.opening-hours strong{
+    color:#6E8B5B;
+    font-size:21px;
 }
 
 @media(max-width:700px){
@@ -201,12 +174,14 @@ body{
     }
 
     .about h2,
-    .location h2{
+    .location h2,
+    .opening-hours h2{
         font-size:32px;
     }
 
     .about p,
-    .location-text p,
+    .location p,
+    .opening-hours p,
     .location-text ul{
         font-size:16px;
     }
@@ -214,24 +189,4 @@ body{
     .location-text h3{
         font-size:26px;
     }
-}
-.address-box{
-    background:#ffffff;
-    padding:20px;
-    border-radius:15px;
-    margin:30px 0;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.address-box h4{
-    margin:0 0 10px;
-    color:#6E8B5B;
-    font-size:22px;
-}
-
-.address-box p{
-    margin:0;
-    line-height:1.8;
-    color:#444;
-    font-size:17px;
 }
