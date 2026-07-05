@@ -249,5 +249,60 @@ body{
     <p><strong>Sonntag</strong><br>11:00 – 23:00</p>
 </section>
 
+<section class="reservation" id="reservation">
+    <h2>Tisch reservieren</h2>
+
+    <p>
+        Reservieren Sie Ihren Tisch bequem online. Wir freuen uns darauf, Sie im Bonsai begrüßen zu dürfen.
+    </p>
+
+    <form class="reservation-form" action="https://formsubmit.co/YOUR-EMAIL-HERE" method="POST">
+
+        <input type="text" name="Name" placeholder="Ihr Name" required>
+
+        <input type="tel" name="Telefon" placeholder="Telefonnummer" required>
+
+        <input type="email" name="E-Mail" placeholder="E-Mail-Adresse" required>
+
+        <input type="date" name="Datum" required>
+
+        <select name="Uhrzeit" required>
+            <option value="">Uhrzeit auswählen</option>
+            <option>11:00</option>
+            <option>11:30</option>
+            <option>12:00</option>
+            <option>12:30</option>
+            <option>13:00</option>
+            <option>13:30</option>
+            <option>14:00</option>
+            <option>14:30</option>
+            <option>17:00</option>
+            <option>17:30</option>
+            <option>18:00</option>
+            <option>18:30</option>
+            <option>19:00</option>
+            <option>19:30</option>
+            <option>20:00</option>
+            <option>20:30</option>
+            <option>21:00</option>
+        </select>
+
+        <select name="Personen" required>
+            <option value="">Anzahl der Personen</option>
+            <option>1 Person</option>
+            <option>2 Personen</option>
+            <option>3 Personen</option>
+            <option>4 Personen</option>
+            <option>5 Personen</option>
+            <option>6 Personen</option>
+            <option>Mehr als 6 Personen</option>
+        </select>
+
+        <textarea name="Nachricht" placeholder="Besondere Wünsche, Allergien oder Hinweise"></textarea>
+
+        <button type="submit">Reservierung anfragen</button>
+    </form>
+</section>
+      
 </body>
 </html>
