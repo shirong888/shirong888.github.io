@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bonsai | Authentic Asian Kitchen</title>
+    <title>Bonsai | Authentic Asian Kitchen</title>
 
-<link rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -67,6 +67,11 @@
                 01219 Dresden<br>
                 Deutschland
             </p>
+
+            <h4>Telefon</h4>
+            <p>
+                <a href="tel:+493514668888">+49 0351 4668888</a>
+            </p>
         </div>
 
         <p>Wir freuen uns darauf, Sie bald im Bonsai begrüßen zu dürfen.</p>
@@ -94,12 +99,13 @@
 
     <form class="reservation-form" action="https://formsubmit.co/thomdangde@gmail.com" method="POST">
 
+        <input type="hidden" name="_subject" value="Neue Tischreservierung – Restaurant Bonsai">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
         <input type="text" name="Name" placeholder="Ihr Name" required>
-
         <input type="tel" name="Telefon" placeholder="Telefonnummer" required>
-
         <input type="email" name="E-Mail" placeholder="E-Mail-Adresse" required>
-
         <input type="date" name="Datum" required>
 
         <select name="Uhrzeit" required>
